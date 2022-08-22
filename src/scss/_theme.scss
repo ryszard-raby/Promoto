@@ -1,0 +1,54 @@
+@include mat.core();
+
+// Define a light theme
+$light-primary: mat.define-palette(mat.$indigo-palette);
+$light-accent: mat.define-palette(mat.$pink-palette);
+$light-ui: mat.define-palette(mat.$indigo-palette);
+$light-theme: mat.define-light-theme((
+ color: (
+   primary: $light-primary,
+   accent: $light-accent,
+ )
+));
+
+// Define a dark theme
+$dark-primary: mat.define-palette(mat.$pink-palette);
+$dark-accent: mat.define-palette(mat.$blue-grey-palette);
+$dark-theme: mat.define-dark-theme((
+ color: (
+   primary: $dark-primary,
+   accent: $dark-accent,
+ )
+));
+
+// Apply the dark theme by default
+// @include mat.core-theme($dark-theme);
+// @include mat.button-theme($dark-theme);
+
+.theme {
+    &--dark {
+        @include mat.all-component-themes($dark-theme);
+        @include mat.strong-focus-indicators-theme($dark-theme);
+        --background-primary: #212529;
+        --background-secondary: #1c1e20;
+        --primary: #{mat.get-color-from-palette($dark-primary, 'default')};
+        --accent: #{mat.get-color-from-palette($dark-accent, 'default')};
+        --text: #fff;
+    }
+    &--light {
+        @include mat.core-color($light-theme);
+        @include mat.button-color($light-theme);
+        --primary: #{mat.get-color-from-palette($light-primary, 'default')};
+        --accent: #{mat.get-color-from-palette($light-accent, 'default')};
+        --ui-boder: #{mat.get-color-from-palette($light-ui, 50)};
+    }
+
+    &__bg {
+        &--primary {
+            background-color: var(--background-primary);
+        }
+        &--secondary {
+            background-color: var(--background-secondary);
+        }
+    }
+}
