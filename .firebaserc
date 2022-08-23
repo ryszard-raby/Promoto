@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "promoto-wroc"
+  },
+  "targets": {
+    "promoto-wroc": {
+      "hosting": {
+        "promoto": [
+          "promoto-wroc"
+        ]
+      }
+    }
+  }
+}

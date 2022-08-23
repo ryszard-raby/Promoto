@@ -1,8 +1,10 @@
 header {
     display: flex;
-    border-bottom: 1px solid var(--ui-boder);
+    border-bottom: 2px solid var(--primary);
 }
 
-.wrapper {
-    width: 100%;
+.logo {
+    margin: 0 auto;
+    transform: translateY(20px);
+    background-color: var(--primary-contrast); 
 }

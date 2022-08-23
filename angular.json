@@ -102,6 +102,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "promoto:build:production",
+            "firebaseProject": "promoto-wroc",
+            "firebaseHostingSite": "promoto-wroc"
+          }
         }
       }
     }
