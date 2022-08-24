@@ -13,12 +13,19 @@
     scroll-snap-align: start;
     min-height: 100vh;
 
-
     &--start {
         background-image: url(../assets/car.png);
         background-size: auto 100%;
-        background-position: calc(100% + 300px) 0;
+        background-position: 100% 0;
         background-repeat: no-repeat;
+
+        @media screen and (max-width: 720px) {
+            background-position: calc(100% + 350px) 0;
+        }
+
+        .wrapper {
+            padding-top: 5vw;
+        }
     }
 
     &--offer {

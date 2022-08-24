@@ -1,11 +1,9 @@
 header {
     display: flex;
-    border-bottom: 3px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
     position: relative;
 }
 
 .logo {
     margin: 0 auto;
-    transform: translateY(20px);
-    background-color: var(--primary-contrast); 
 }
