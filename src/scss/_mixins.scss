@@ -1,0 +1,17 @@
+@mixin media($size) {
+    @if ($size == 's') {
+        @media screen and (max-width: $s-breakpoint) {
+            @content;
+        }
+    }
+    @if ($size == 'm') {
+        @media screen and (max-width: $m-breakpoint) {
+            @content;
+        }
+    }
+    @if ($size == 'l') {
+        @media screen and (max-width: $l-breakpoint) {
+            @content;
+        }
+    }
+}

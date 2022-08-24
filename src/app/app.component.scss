@@ -29,29 +29,8 @@
     }
 
     &--offer {
+        background-color: var(--background-secondary);
         justify-content: center;
         align-items: center;
-    }
-}
-
-.wrapper {
-    width: 100%;
-}
-
-.animation {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-
-    img {
-        grid-column: 1; 
-        grid-row: 1;
-    }
-
-    .car {
-        align-self: end;
-        justify-self: end;
-        margin-right: 4rem;
-        margin-bottom: 4rem;
     }
 }

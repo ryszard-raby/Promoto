@@ -1,0 +1,63 @@
+{
+  "Config": {
+    "Locations": [
+      "PL",
+      "UA",
+      "EN"
+    ]
+  },
+  "Content": {
+    "Call": {
+      "EN": [
+        "605 399 311",
+        "Call now"
+      ],
+      "PL": [
+        "605 399 311",
+        "Zadzwoń"
+      ],
+      "UA": [
+        "605 399 311",
+        "Зателефонуй мені"
+      ]
+    },
+    "Offer": {
+      "Offers": {
+        "PL": [
+          [
+            "directions_car",
+            "Wydziały Komunikacji",
+            "rejestracja pojazdów (samochody, motocykle, quady, przyczepy, ciagniki rolnicze) sprowadzonych z zagranicy i przerejstrowania krajowe",
+            "odbiór stałych dowodów rejestracyjnych"
+          ],
+          [
+            "account_balance",
+            "Urzędy Skarbowe",
+            "Deklaracje akcyzowe AKC-US",
+            "Wnioski o zwolnienie z akcyzy mienia przesiedleńczego "
+          ]
+        ]
+      },
+      "Title": {
+        "PL": [
+          "Robię różne rzeczy",
+          "A najlepsze są poniżej"
+        ]
+      }
+    },
+    "Title": {
+      "EN": [
+        "Vehicle registration",
+        "PROMOTO Małgorzata Sagan"
+      ],
+      "PL": [
+        "Rejestracja pojazdu z zagranicy",
+        "PROMOTO Małgorzata Sagan"
+      ],
+      "UA": [
+        "Оформлення авто з-за кордону",
+        "ПРОМОТО Малгожата Саган"
+      ]
+    }
+  }
+}

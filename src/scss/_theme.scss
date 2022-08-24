@@ -39,6 +39,8 @@ $dark-theme: mat.define-dark-theme((
         @include mat.core-color($light-theme);
         @include mat.button-color($light-theme);
         // --primary: #{mat.get-color-from-palette($light-primary, 'default')};
+        --background-primary: #ffffff;
+        --background-secondary: #f5faff;
         --primary: #2484c6;
         --accent: #{mat.get-color-from-palette($light-accent, 'default')};
         --ui-boder: #{mat.get-color-from-palette($light-ui, 50)};

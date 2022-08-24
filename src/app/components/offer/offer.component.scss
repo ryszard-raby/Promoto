@@ -1,0 +1,28 @@
+.icon {
+    & ::ng-deep {
+        .mat-icon {
+            font-size: 3em;
+            width: initial;
+            height: initial;
+        }
+    }
+}
+
+.card {
+    padding: 1rem;
+    background-color: var(--background-primary);
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.title {
+    margin-top: 0;
+}
+
+.header {
+    margin-left: 1rem;
+}
+
+.text {
+    margin-left: 1rem;
+}

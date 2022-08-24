@@ -1,1 +1,30 @@
-<p>offer works!</p>
+<h2 class="header">
+    {{header}}
+</h2>
+<p class="text">
+    {{text}}
+</p>
+<section class="card" *ngFor="let offer of offers">
+    <div class="icon">
+        <mat-icon>{{offer[0]}}</mat-icon> 
+    </div>
+    <h3 class="title">
+        {{offer[1]}}
+    </h3>
+    <ul>
+        <li>
+            {{offer[2]}}
+        </li>
+        <li>
+            {{offer[3]}}
+        </li>
+    </ul>
+    <!-- <button
+        mat-button
+        color="accent"
+        type="button"
+        class="more">
+        <mat-icon>add</mat-icon>
+        Rozwiń
+    </button> -->
+</section>
