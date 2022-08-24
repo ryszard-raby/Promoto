@@ -43,6 +43,7 @@ $dark-theme: mat.define-dark-theme((
         --accent: #{mat.get-color-from-palette($light-accent, 'default')};
         --ui-boder: #{mat.get-color-from-palette($light-ui, 50)};
         --primary-contrast: white;
+        --text-color: #044887;
     }
 
     &__bg {

@@ -1,0 +1,5 @@
+<mat-form-field>
+  <mat-select [(value)]="selectedLocation">
+    <mat-option [value]="selectedLocation" *ngFor="let location of locations" (click)="selectLocation(location)">{{ location }}</mat-option>
+  </mat-select>
+</mat-form-field>

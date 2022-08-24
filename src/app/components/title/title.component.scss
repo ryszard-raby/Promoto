@@ -1,4 +1,17 @@
-section {
-    text-align: center;
-    padding: 4rem 1rem;
+.wrapper {
+    margin: 1rem;
+}
+
+h1 {
+    color: var(--text-color);
+    font-weight: 800;
+    font-size: 1.5em;
+    // width: 60%;
+    margin-bottom: .3em;
+}
+
+p {
+    color: var(--text-color);
+    font-size: 1.2em;
+    margin-top: 0;
 }

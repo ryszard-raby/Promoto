@@ -1,10 +1,19 @@
 .wrapper {
-    text-align: center;
+    // text-align: center;
 }
 
 .phone {
     color: var(--accent);
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
     margin: 1rem;
+}
+
+.cta {
+    margin: 1rem;
+}
+
+button {
+    border-radius: 30px;
+    font-size: 1rem;
 }

@@ -1,0 +1,50 @@
+:host {
+    scroll-snap-type: y mandatory;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.view {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+    min-height: 100vh;
+
+
+    &--start {
+        background-image: url(../assets/car.png);
+        background-size: auto 100%;
+        background-position: calc(100% + 300px) 0;
+        background-repeat: no-repeat;
+    }
+
+    &--offer {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.animation {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    img {
+        grid-column: 1; 
+        grid-row: 1;
+    }
+
+    .car {
+        align-self: end;
+        justify-self: end;
+        margin-right: 4rem;
+        margin-bottom: 4rem;
+    }
+}

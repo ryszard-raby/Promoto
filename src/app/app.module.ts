@@ -13,8 +13,11 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { CallComponent } from './components/call/call.component';
 import { MatButtonModule } from '@angular/material/button';
-
-
+import { OfferComponent } from './components/offer/offer.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { MatSelectModule } from '@angular/material/select';
+import { LocationComponent } from './components/location/location.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 
 @NgModule({
   declarations: [
@@ -23,16 +26,25 @@ import { MatButtonModule } from '@angular/material/button';
     HeroComponent,
     TitleComponent,
     CallComponent,
+    OfferComponent,
+    LocationComponent,
   ],
   imports: [
-    BrowserModule,
-    MatIconModule,
-    MatButtonModule,
     // provideFirebaseApp(() => initializeApp(environment.firebase)),
     AngularFireModule.initializeApp(environment.firebase),
     provideDatabase(() => getDatabase()),
     provideFirestore(() => getFirestore()),
-    
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
+    BrowserAnimationsModule,
+    BrowserModule,
+    MatIconModule,
+    MatButtonModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

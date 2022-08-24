@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FirebaseService } from 'src/app/services/firebase/firebase.service';
+import { LocationService } from 'src/app/services/location/location.service';
 
 @Component({
   selector: 'app-call',
@@ -9,20 +10,25 @@ import { FirebaseService } from 'src/app/services/firebase/firebase.service';
 })
 export class CallComponent implements OnInit {
   
-  items: Observable<any>
-  location: string = 'PL'
+  items: Observable<any>;
+  location: string = 'PL';
   call: string = '';
   number: string = '';
 
-  constructor(private firebase: FirebaseService) {
-    this.items = this.firebase.read('Content/Call/' + this.location);
+  constructor(private firebase: FirebaseService, private locationService: LocationService) {
+    this.items = this.firebase.read('Content/Call/' + location);
+
+    locationService.activeLocation.subscribe(location => {
+      this.items = this.firebase.read('Content/Call/' + location);
+      this.items.subscribe(v => {
+        this.number = v[0];
+        this.call = v[1]
+      })
+    })
   }
 
   ngOnInit(): void {
-    this.items.subscribe(v => {
-      this.number = v[0];
-      this.call = v[1]
-    })
+
   }
 
 }
