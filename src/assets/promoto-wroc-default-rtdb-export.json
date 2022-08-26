@@ -7,19 +7,33 @@
     ]
   },
   "Content": {
+    "Title": {
+      "PL": [{
+        "Title": "Rejestracja pojazdu z zagranicy",
+        "Subtitle": "PROMOTO Małgorzata Sagan"
+      }],
+      "UA": [{
+        "Title": "ПРОМОТО Малгожата Саган",
+        "Subtitle": "Оформлення авто з-за кордону"
+      }],
+      "EN": [{
+        "Title": "Vehicle registration",
+        "Subtitle": "PROMOTO Małgorzata Sagan"
+      }]
+    },
     "Call": {
-      "EN": [
-        "605 399 311",
-        "Call now"
-      ],
-      "PL": [
-        "605 399 311",
-        "Zadzwoń"
-      ],
-      "UA": [
-        "605 399 311",
-        "Зателефонуй мені"
-      ]
+      "PL": [{
+        "Phone": "605 399 311",
+        "CallButton": "Zadzwoń"
+      }],
+      "UA": [{
+        "Phone": "605 399 311",
+        "CallButton": "Зателефонуй мені"
+      }],
+      "EN": [{
+        "Phone": "605 399 311",
+        "CallButton": "Call now"
+      }]
     },
     "Offer": {
       "Header": {
@@ -79,20 +93,6 @@
           }
         ]
       }
-    },
-    "Title": {
-      "EN": [
-        "Vehicle registration",
-        "PROMOTO Małgorzata Sagan"
-      ],
-      "PL": [
-        "Rejestracja pojazdu z zagranicy",
-        "PROMOTO Małgorzata Sagan"
-      ],
-      "UA": [
-        "Оформлення авто з-за кордону",
-        "ПРОМОТО Малгожата Саган"
-      ]
     }
   }
 }

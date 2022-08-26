@@ -15,6 +15,7 @@
     background-color: var(--background-primary);
     border-radius: 10px;
     margin: 0 .5rem;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .title {
@@ -85,4 +86,9 @@
             display: none;
         }
     }
+}
+
+.more, .less {
+    font-size: 1em;
+    margin-left: -1.2rem;
 }
