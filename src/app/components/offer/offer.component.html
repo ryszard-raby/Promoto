@@ -1,30 +1,44 @@
-<h2 class="header">
+<h2 *ngIf="header" class="header">
     {{header}}
 </h2>
-<p class="text">
+<p *ngIf="text" class="text">
     {{text}}
 </p>
-<section class="card" *ngFor="let offer of offers">
-    <div class="icon">
-        <mat-icon>{{offer[0]}}</mat-icon> 
+
+<div class="scroll">
+    <div class="scroll__item" *ngFor="let offer of offers">
+        <section class="card" (click)="scrollTo($event)">
+
+            <h3 class="title">
+                <div class="icon">
+                    <mat-icon>{{offer.Header.Icon}}</mat-icon> 
+                </div>
+                {{offer.Header.Title}}
+            </h3>
+        
+            <ul class="list">
+                <li class="list__item" *ngFor="let point of offer.Points">
+                    {{point}}
+                </li>
+            </ul>
+            <button
+                mat-button
+                color="accent"
+                type="button"
+                class="more"
+                (click)="toggleClass($event, 'expand')">
+                <mat-icon>expand_more</mat-icon>
+                Więcej
+            </button>
+            <button
+                mat-button
+                color="accent"
+                type="button"
+                class="less"
+                (click)="toggleClass($event, 'expand')">
+                <mat-icon>expand_less</mat-icon>
+                Mniej
+            </button>
+        </section>
     </div>
-    <h3 class="title">
-        {{offer[1]}}
-    </h3>
-    <ul>
-        <li>
-            {{offer[2]}}
-        </li>
-        <li>
-            {{offer[3]}}
-        </li>
-    </ul>
-    <!-- <button
-        mat-button
-        color="accent"
-        type="button"
-        class="more">
-        <mat-icon>add</mat-icon>
-        Rozwiń
-    </button> -->
-</section>
+</div>

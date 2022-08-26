@@ -1,7 +1,8 @@
 .icon {
     & ::ng-deep {
         .mat-icon {
-            font-size: 3em;
+            font-size: 1.5em;
+            margin-right: .25em;
             width: initial;
             height: initial;
         }
@@ -9,14 +10,17 @@
 }
 
 .card {
+    cursor: pointer;
     padding: 1rem;
     background-color: var(--background-primary);
     border-radius: 10px;
-    margin: 1rem;
+    margin: 0 .5rem;
 }
 
 .title {
     margin-top: 0;
+    display: flex;
+    
 }
 
 .header {
@@ -25,4 +29,60 @@
 
 .text {
     margin-left: 1rem;
+}
+
+.scroll {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+
+    &::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+    }
+
+    &__item {
+        min-width: calc(100% - 10vw);
+        max-width: var(--max-width);
+        scroll-snap-align: center;
+    }
+}
+
+@keyframes expand {
+    0% {transform: translateY(-10px); opacity: 0}
+    100% {transform: translateX(0); opacity: 1}
+}
+
+.list {
+    $root: &;
+    padding-left: 1rem;
+
+    &__item {
+        transition: all ease;
+        margin-bottom: .3em;
+    }
+
+    &.expand {
+        & ~ .more {
+            display: none;
+        }
+
+        #{$root}__item {
+            &:nth-child(n+3) {
+                animation: expand .5s ease forwards;
+            }
+        }
+    }
+    &:not(.expand) {
+        #{$root}__item {
+            &:nth-child(n+3) {
+                display: none;
+            }
+        }
+
+        & ~ .less {
+            display: none;
+        }
+    }
 }

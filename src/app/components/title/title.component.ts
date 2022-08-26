@@ -18,10 +18,10 @@ export class TitleComponent implements OnInit {
   location: string = 'PL'
 
   constructor(private firebase: FirebaseService, private db: AngularFireDatabase, private locationService: LocationService) {
-    this.items = this.firebase.read('Content/Title/' + location);
+    this.items = this.firebase.read('Content/Title/PL');
 
-    locationService.activeLocation.subscribe(location => {
-      this.items = this.firebase.read('Content/Title/' + location);
+    this.locationService.activeLocation.subscribe(location => {
+      this.items = this.firebase.read('Content/Title/PL');
       this.items.subscribe(v => {
         this.title = v[0];
         this.subtitle = v[1];

@@ -15,9 +15,9 @@ export class OfferComponent implements OnInit {
 
   constructor(firebase: FirebaseService, locationService: LocationService) {
     locationService.activeLocation.subscribe(location => {
-      firebase.read('Content/Offer/Title/' + location).subscribe(title => {
-        this.header = title[0];
-        this.text = title[1];
+      firebase.read('Content/Offer/Header/' + location).subscribe(header => {
+        this.header = header[0].Title;
+        this.text = header[0].Subtitle;
       })
       firebase.read('Content/Offer/Offers/' + location).subscribe(offers => {
         this.offers = offers
@@ -26,6 +26,18 @@ export class OfferComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  toggleClass(event: any, className: string) {
+    const el = event.target.closest('.card').querySelector('.list');
+    const hasClass = el.classList.contains(className);
+
+    !hasClass ? el.classList.add(className) : el.classList.remove(className);
+  }
+
+  scrollTo(event: any) {
+    const el = event.target.closest('.card');
+    el.scrollIntoView({behavior: "smooth"});
   }
 
 }

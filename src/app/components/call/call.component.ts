@@ -16,10 +16,10 @@ export class CallComponent implements OnInit {
   number: string = '';
 
   constructor(private firebase: FirebaseService, private locationService: LocationService) {
-    this.items = this.firebase.read('Content/Call/' + location);
+    this.items = this.firebase.read('Content/Call/PL');
 
     locationService.activeLocation.subscribe(location => {
-      this.items = this.firebase.read('Content/Call/' + location);
+      this.items = this.firebase.read('Content/Call/PL');
       this.items.subscribe(v => {
         this.number = v[0];
         this.call = v[1]
