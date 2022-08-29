@@ -7,3 +7,15 @@ html {
     max-width: var(--max-width);
     margin: 0 auto;
 }
+
+.card {
+    padding: 1rem;
+
+
+    &--bg {
+        background-color: var(--background-primary);
+        border-radius: 10px;
+        margin: 0 .5rem;
+        padding: .5rem;
+    }
+}

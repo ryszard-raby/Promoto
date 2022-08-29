@@ -189,6 +189,22 @@
           }
         ]
       }
+    },
+    "Contact": {
+      "PL" : [{
+        "Title" : "Rejestracja pojazdu Wrocław",
+        "Subtitle": "PROMOTO Małgorzata Sagan",
+        "Text" : "Od dwudziestu lat jestem związana z branżą motoryzacyjną. Od czternastu lat służę osobom i firmom z Wrocławia i okolicznych powiatów, pomocą w rejestracji pojazdów i dopełnianiu towarzyszących zakupowi czynności podatkowych.",
+        "Email" : "m.sagan@poczta.fm"
+      }]
+    },
+    "Payment" : {
+      "PL": [{
+        "Payment" : "Konto do zapłaty akcyzy",
+        "PaymentAdress" : "Urząd Skarbowy w Nowym Targu ",
+        "PaymentAccount" : "nr konta: 84 1010 1270 0008 2422 2400 0000",
+        "PaymentIcon" : "account_balance"
+      }]
     }
   }
 }

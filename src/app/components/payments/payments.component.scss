@@ -1,0 +1,25 @@
+.card {
+    position: relative;
+    & ::ng-deep {
+        .mat-icon {
+            font-size: 3em;
+            margin-right: .25em;
+            width: initial;
+            height: initial;
+        }
+    }
+}
+
+.background {
+    & ::ng-deep {
+        .mat-icon {
+            font-size: 50em;
+            width: initial;
+            height: initial;
+            position: absolute;
+            opacity: .05;
+            top: 0;
+            right: 0;
+        }
+    }
+}

@@ -12,6 +12,7 @@
     flex-direction: column;
     scroll-snap-align: start;
     min-height: 100vh;
+    position: relative;
 
     &--start {
         background-image: url(../assets/car.png);
@@ -30,6 +31,18 @@
 
     &--offer {
         background-color: var(--background-secondary);
+        justify-content: center;
+        align-items: center;
+    }
+
+    &--contact {
+        background-color: var(--background-secondary);
+        justify-content: center;
+        align-items: center;
+    }
+
+    &--payments {
+        background-color: var(--background-primary);
         justify-content: center;
         align-items: center;
     }

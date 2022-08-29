@@ -1,0 +1,11 @@
+<div class="background" *ngIf="payment.PaymentIcon">
+    <mat-icon>{{payment.PaymentIcon}}</mat-icon>
+</div>
+<section class="card" *ngIf="payment">
+    <mat-icon>{{payment.PaymentIcon}}</mat-icon>
+    <h3>{{payment.Payment}}</h3>
+    <p>
+        {{payment.PaymentAdress}}<br>
+        {{payment.PaymentAccount}}
+    </p>
+</section>
