@@ -13,8 +13,8 @@
         "Subtitle": "PROMOTO Małgorzata Sagan"
       }],
       "UA": [{
-        "Title": "ПРОМОТО Малгожата Саган",
-        "Subtitle": "Оформлення авто з-за кордону"
+        "Title": "Оформлення авто з-за кордону",
+        "Subtitle": "ПРОМОТО Малгожата Саган"
       }],
       "EN": [{
         "Title": "Vehicle registration",
@@ -48,6 +48,20 @@
         "EN": [{
           "Title": "Translation of documents and vehicle registration",
           "Subtitle": ""
+        }]
+      },
+      "ExpandButton": {
+        "PL": [{
+          "More": "Więcej",
+          "Less": "Mniej"
+        }],
+        "UA": [{
+          "More": "більше",
+          "Less": "менше"
+        }],
+        "EN": [{
+          "More": "More",
+          "Less": "Less"
         }]
       },
       "Offers": {
@@ -89,6 +103,88 @@
               "Złożenie deklaracji akcyzowej: 14 dni od przywozu do kraju",
               "Złożenie deklaracji PCC-3: 14 dni od zawarcia umowy",
               "Złożenie deklaracji VAT 23: 14 dni od dokonania nabycia wewnątrzwspólnotowego"
+            ]
+          }
+        ],
+        "UA": [
+          {
+            "Header" : {
+              "Icon": "directions_car",
+              "Title": "Відділи зв'язку"
+            },
+            "Points" : [
+              "Реєстрація транспортних засобів (автомобілів, мотоциклів, квадроциклів, причепів, сільськогосподарських тракторів), ввезених з-за кордону та вітчизняного переобладнання",
+              "Збірник безстрокових реєстраційних посвідчень",
+              "Повідомлення про продаж",
+              "Зняття з обліку утилізованих транспортних засобів",
+              "Тимчасова реєстрація транспортних засобів, що продаються за кордон - експортні номерні знаки"
+            ]
+          },
+          {
+            "Header" : {
+              "Icon": "account_balance", 
+              "Title": "Податкові служби"
+            },
+            "Points" : [
+              "Акцизні декларації AKC-US",
+              "Заяви про звільнення від сплати акцизного збору за майно переселенців",
+              "Заяви про звільнення від оподаткування акцизним збором для вантажних автомобілів",
+              "Сервіс для компаній – розсилка електронних декларацій",
+              "Свідоцтва про сплату акцизного збору"
+            ]
+          },
+          {
+            "Header" : {
+              "Icon": "edit", 
+              "Title": "Присяжні переклади документів"
+            },
+            "Points" : [
+              "Перереєстрація транспортного засобу з-за кордону: 30 днів з моменту ввезення в країну",
+              "Перереєстрація автомобіля, купленого за містом: 30 днів з моменту покупки",
+              "Подання акцизної декларації: 14 днів з моменту ввезення в країну",
+              "Подання декларації ПКК-3: 14 днів з моменту укладення договору",
+              "Подання декларації з ПДВ 23: 14 днів з дати внутрішньоспівтовариського придбання"
+            ]
+          }
+        ],
+        "EN": [
+          {
+            "Header" : {
+              "Icon": "directions_car",
+              "Title": "Communication Departments"
+            },
+            "Points" : [
+              "Registration of vehicles (cars, motorcycles, quads, trailers, agricultural tractors) imported from abroad and domestic re-conversion",
+              "Collection of permanent registration certificates",
+              "Sales Notification",
+              "Deregistration of scrapped vehicles",
+              "Temporary registrations of vehicles sold abroad - export plates"
+            ]
+          },
+          {
+            "Header" : {
+              "Icon": "account_balance", 
+              "Title": "Tax offices"
+            },
+            "Points" : [
+              "AKC-US excise declarations",
+              "Applications for exemption from excise duty for resettlement property",
+              "Applications for exemption from excise duty for trucks",
+              "Service for companies - sending electronic declarations",
+              "Certificates confirming payment of excise duty"
+            ]
+          },
+          {
+            "Header" : {
+              "Icon": "edit", 
+              "Title": "Sworn translations of documents"
+            },
+            "Points" : [
+              "Re-registration of a vehicle from abroad: 30 days from import to the country",
+              "Re-registration of a vehicle bought in the country: 30 days from purchase",
+              "Submission of the excise declaration: 14 days from import to the country",
+              "Submission of the PCC-3 declaration: 14 days from the conclusion of the contract",
+              "Submission of the VAT declaration 23: 14 days from the date of the intra-Community acquisition"
             ]
           }
         ]

@@ -5,7 +5,7 @@
     {{text}}
 </p>
 
-<div class="scroll">
+<div class="scroll" *ngIf="offers">
     <div class="scroll__item" *ngFor="let offer of offers">
         <section class="card" (click)="scrollTo($event)">
 
@@ -28,7 +28,7 @@
                 class="more"
                 (click)="toggleClass($event, 'expand')">
                 <mat-icon>expand_more</mat-icon>
-                Więcej
+                {{expand.More}}
             </button>
             <button
                 mat-button
@@ -37,7 +37,7 @@
                 class="less"
                 (click)="toggleClass($event, 'expand')">
                 <mat-icon>expand_less</mat-icon>
-                Mniej
+                {{expand.Less}}
             </button>
         </section>
     </div>

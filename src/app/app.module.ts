@@ -17,7 +17,8 @@ import { OfferComponent } from './components/offer/offer.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { MatSelectModule } from '@angular/material/select';
 import { LocationComponent } from './components/location/location.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactComponent } from './components/contact/contact.component'; 
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CallComponent,
     OfferComponent,
     LocationComponent,
+    ContactComponent,
   ],
   imports: [
     // provideFirebaseApp(() => initializeApp(environment.firebase)),
