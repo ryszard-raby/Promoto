@@ -1,0 +1,6 @@
+<button 
+    mat-button
+    (click)="toggleTheme()">
+    <mat-icon *ngIf="theme.mode == 'light'">brightness_low</mat-icon>
+    <mat-icon *ngIf="theme.mode == 'dark'">brightness_high</mat-icon>
+</button>

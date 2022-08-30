@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { MatIconModule } from '@angular/material/icon';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
@@ -19,7 +19,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { LocationComponent } from './components/location/location.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './components/contact/contact.component';
-import { PaymentsComponent } from './components/payments/payments.component'; 
+import { PaymentsComponent } from './components/payments/payments.component';
+import { ThemeComponent } from './components/theme/theme.component'; 
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { PaymentsComponent } from './components/payments/payments.component';
     LocationComponent,
     ContactComponent,
     PaymentsComponent,
+    ThemeComponent,
   ],
   imports: [
     // provideFirebaseApp(() => initializeApp(environment.firebase)),

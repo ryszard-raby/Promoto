@@ -15,3 +15,15 @@
         }
     }
 }
+
+@mixin dark {
+    :host.theme--dark::ng-deep & {
+        @content;
+    }
+}
+
+@mixin light {
+    :host.theme--light::ng-deep & {
+        @content;
+    }
+}

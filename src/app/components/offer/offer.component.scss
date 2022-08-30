@@ -11,21 +11,23 @@
 
 .card {
     cursor: pointer;
+    color: var(--text-color);
     -webkit-tap-highlight-color: transparent;
 }
 
 .title {
     margin-top: 0;
     display: flex;
-    
 }
 
 .header {
     margin-left: 1rem;
+    color: var(--text-color);
 }
 
 .text {
     margin-left: 1rem;
+    color: var(--text-color);
 }
 
 .scroll {

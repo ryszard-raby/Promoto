@@ -12,8 +12,9 @@ $light-theme: mat.define-light-theme((
 ));
 
 // Define a dark theme
-$dark-primary: mat.define-palette(mat.$pink-palette);
-$dark-accent: mat.define-palette(mat.$blue-grey-palette);
+$dark-primary: mat.define-palette(mat.$blue-gray-palette);
+$dark-accent: mat.define-palette(mat.$pink-palette);
+$dark-ui: mat.define-palette(mat.$blue-palette);
 $dark-theme: mat.define-dark-theme((
  color: (
    primary: $dark-primary,
@@ -29,11 +30,13 @@ $dark-theme: mat.define-dark-theme((
     &--dark {
         @include mat.all-component-themes($dark-theme);
         @include mat.strong-focus-indicators-theme($dark-theme);
-        --background-primary: #212529;
-        --background-secondary: #1c1e20;
+        --background-primary: #0d212b;
+        --background-secondary: #132836;
         --primary: #{mat.get-color-from-palette($dark-primary, 'default')};
         --accent: #{mat.get-color-from-palette($dark-accent, 'default')};
-        --text: #fff;
+        --ui-boder: #{mat.get-color-from-palette($dark-ui, 50)};
+        --primary-contrast: #ffffff; 
+        --text-color: #ffffff;
     }
     &--light {
         @include mat.core-color($light-theme);
@@ -44,7 +47,7 @@ $dark-theme: mat.define-dark-theme((
         --primary: #2484c6;
         --accent: #{mat.get-color-from-palette($light-accent, 'default')};
         --ui-boder: #{mat.get-color-from-palette($light-ui, 50)};
-        --primary-contrast: white;
+        --primary-contrast: #ffffff;
         --text-color: #044887;
     }
 

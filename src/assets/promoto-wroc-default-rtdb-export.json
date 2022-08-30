@@ -196,13 +196,37 @@
         "Subtitle": "PROMOTO Małgorzata Sagan",
         "Text" : "Od dwudziestu lat jestem związana z branżą motoryzacyjną. Od czternastu lat służę osobom i firmom z Wrocławia i okolicznych powiatów, pomocą w rejestracji pojazdów i dopełnianiu towarzyszących zakupowi czynności podatkowych.",
         "Email" : "m.sagan@poczta.fm"
+      }],
+      "UA" : [{
+        "Title" : "Реєстрація автомобіля Вроцлав",
+        "Subtitle": "ПРОМОТО Малгожата Саган",
+        "Text" : "Двадцять років я пов'язаний з автомобільною промисловістю. Протягом чотирнадцяти років я обслуговую людей і компанії з Вроцлава та прилеглих повітів, допомагаючи з реєстрацією транспортного засобу та проходженням податкових процедур, що супроводжують купівлю.",
+        "Email" : "m.sagan@poczta.fm"
+      }],
+      "EN" : [{
+        "Title" : "Vehicle registration Wrocław",
+        "Subtitle": "PROMOTO Małgorzata Sagan",
+        "Text" : "For twenty years I have been associated with the automotive industry. For fourteen years, I have been helping people and companies from Wrocław and the surrounding poviats, assisting in vehicle registration and completing tax activities accompanying the purchase.",
+        "Email" : "m.sagan@poczta.fm"
       }]
     },
     "Payment" : {
       "PL": [{
         "Payment" : "Konto do zapłaty akcyzy",
-        "PaymentAdress" : "Urząd Skarbowy w Nowym Targu ",
+        "PaymentAdress" : "Urząd Skarbowy w Nowym Targu",
         "PaymentAccount" : "nr konta: 84 1010 1270 0008 2422 2400 0000",
+        "PaymentIcon" : "account_balance"
+      }],
+      "UA": [{
+        "Payment" : "Рахунок для сплати акцизного збору",
+        "PaymentAdress" : "Urząd Skarbowy w Nowym Targu",
+        "PaymentAccount" : "номер рахунку: 84 1010 1270 0008 2422 2400 0000",
+        "PaymentIcon" : "account_balance"
+      }],
+      "EN": [{
+        "Payment" : "Account for the payment of excise duty",
+        "PaymentAdress" : "Urząd Skarbowy w Nowym Targu",
+        "PaymentAccount" : "account number: 84 1010 1270 0008 2422 2400 0000",
         "PaymentIcon" : "account_balance"
       }]
     }

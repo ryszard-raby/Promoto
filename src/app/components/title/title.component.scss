@@ -4,13 +4,14 @@
 }
 
 h1 {
+    color: var(--text-color);
     font-weight: 800;
     font-size: 1.5em;
-    // width: 60%;
     margin-bottom: .3em;
 }
 
 p {
+    color: var(--text-color);
     font-size: 1.2em;
     margin-top: 0;
 }

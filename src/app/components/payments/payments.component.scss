@@ -1,4 +1,5 @@
 .card {
+    color: var(--text-color);
     position: relative;
     & ::ng-deep {
         .mat-icon {
@@ -17,9 +18,9 @@
             width: initial;
             height: initial;
             position: absolute;
-            opacity: .05;
             top: 0;
             right: 0;
+            color: var(--background-secondary);
         }
     }
 }
