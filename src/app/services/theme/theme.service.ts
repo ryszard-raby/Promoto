@@ -9,6 +9,6 @@ export class ThemeService {
   theme = new BehaviorSubject<any>({})
 
   constructor() {
-    this.theme.next({mode: 'light'});
+    this.theme.next({light: 1});
   }
 }

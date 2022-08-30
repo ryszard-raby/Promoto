@@ -13,7 +13,7 @@ export class AppComponent {
   title = 'promoto';
   className = '';
   
-  @HostBinding('class.theme--light') light: boolean = true;
+  @HostBinding('class.theme--light') light: boolean = false;
   @HostBinding('class.theme--dark') dark: boolean = false;
 
   constructor (private themeService: ThemeService){
@@ -21,17 +21,9 @@ export class AppComponent {
 
   ngOnInit() {
     this.themeService.theme.subscribe(theme => {
-      if (theme.mode == 'light') {
-        this.light = true; this.dark = false;
-      }
-      else if (theme.mode == 'dark'){
-        this.light = false; this.dark = true;
-      }
+      this.light = theme.light;
+      this.dark = theme.dark;
     })
   }
-
-
-
-
 }
 

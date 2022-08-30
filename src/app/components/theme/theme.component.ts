@@ -11,8 +11,8 @@ export class ThemeComponent implements OnInit {
   theme: any;
 
   constructor(private themeService: ThemeService) {
-    this.themeService.theme.subscribe(mode => {
-      this.theme = mode;
+    this.themeService.theme.subscribe(theme => {
+      this.theme = theme;
     })
   }
 
@@ -21,10 +21,10 @@ export class ThemeComponent implements OnInit {
   }
 
   toggleTheme(){
-    if (this.theme.mode == 'light')
-      this.themeService.theme.next({mode: 'dark'});
+    if (this.theme.light)
+      this.themeService.theme.next({dark: 1});
     else 
-      this.themeService.theme.next({mode: 'light'});
+      this.themeService.theme.next({light: 1});
   }
 
 }

@@ -18,10 +18,22 @@
 
         .mat-select-value {
             color: var(--text-color);
+            width: initial;
         }
 
         .mat-form-field-infix {
             border-top: 0;
         }
     }
+}
+
+mat-select {
+    font-weight: bold;
+    margin: .8rem;
+}
+
+mat-icon {
+    display: flex;
+    color: var(--text-color);
+    margin: .8rem auto;
 }
