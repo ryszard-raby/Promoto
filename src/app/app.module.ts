@@ -20,7 +20,9 @@ import { LocationComponent } from './components/location/location.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './components/contact/contact.component';
 import { PaymentsComponent } from './components/payments/payments.component';
-import { ThemeComponent } from './components/theme/theme.component'; 
+import { ThemeComponent } from './components/theme/theme.component';
+import { MatMenuModule } from '@angular/material/menu';
+
 
 @NgModule({
   declarations: [
@@ -51,6 +53,7 @@ import { ThemeComponent } from './components/theme/theme.component';
     MatIconModule,
     MatButtonModule,
     MatSelectModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

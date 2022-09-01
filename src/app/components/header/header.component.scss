@@ -1,11 +1,13 @@
 header {
     background-color: var(--background-secondary);
+    height: 70px;
 }
 
 .wrapper {
     display: flex;
     align-items: center;
-    padding: 0 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
     box-sizing: border-box;
 }
 

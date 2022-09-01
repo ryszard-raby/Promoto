@@ -8,10 +8,16 @@ import { FirebaseService } from '../firebase/firebase.service';
 export class LocationService {
 
   locations: Observable<any>;
-  activeLocation = new Subject<string>();
+  activeLocation = new BehaviorSubject<string>('');
+  getLocation: string = String(localStorage.getItem('location'));
 
   constructor(firebase: FirebaseService) {
+    this.getLocation = this.getLocation ? this.getLocation : 'PL'
     this.locations = firebase.read('Config/Locations/');
-    this.locations.subscribe(v => this.activeLocation.next(v[0]));
+    this.locations.subscribe(v => {
+
+    });
+    this.activeLocation.next(this.getLocation);
+    this.activeLocation.subscribe(activeLocation => localStorage.setItem('location', activeLocation))
   }
 }

@@ -15,9 +15,10 @@ interface Location {
 export class LocationComponent implements OnInit {
 
   locations: string[] = [];
-  selectedLocation = '';
+  selectedLocation: string = '';
 
   constructor(private locationService: LocationService) {
+    locationService.activeLocation.subscribe(active => this.selectedLocation = active)
     locationService.locations.subscribe(locations => {
       this.locations = locations;
     })
