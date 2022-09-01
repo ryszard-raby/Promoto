@@ -12,11 +12,8 @@ export class LocationService {
   getLocation: string = String(localStorage.getItem('location'));
 
   constructor(firebase: FirebaseService) {
-    this.getLocation = this.getLocation ? this.getLocation : 'PL'
+    this.getLocation = this.getLocation && this.getLocation != 'null' ? this.getLocation : 'PL'
     this.locations = firebase.read('Config/Locations/');
-    this.locations.subscribe(v => {
-
-    });
     this.activeLocation.next(this.getLocation);
     this.activeLocation.subscribe(activeLocation => localStorage.setItem('location', activeLocation))
   }

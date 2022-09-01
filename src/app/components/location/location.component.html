@@ -1,9 +1,3 @@
-<!-- <mat-form-field>
-<mat-select> 
-    <mat-option [value]="selectedLocation" *ngFor="let location of locations" (click)="selectLocation(location)">{{ location }}</mat-option>
-  </mat-select>
-</mat-form-field> -->
-
 <button mat-button [matMenuTriggerFor]="menu">{{selectedLocation}}</button>
 <mat-menu #menu="matMenu">
   <button mat-menu-item *ngFor="let location of locations" (click)="selectLocation(location)">{{location}}</button>
