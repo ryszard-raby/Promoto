@@ -111,7 +111,7 @@
           "builder": "@angular/fire:deploy",
           "options": {
             "prerender": false,
-            "ssr": false,
+            "ssr": true,
             "browserTarget": "promoto:build:production",
             "firebaseProject": "promoto-wroc",
             "firebaseHostingSite": "promoto-wroc"
